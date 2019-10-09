@@ -35,6 +35,25 @@ describe('Home Page', () => {
 
     });
 
+    it('should display the beginners courses', () => {
+
+        cy.get('.mat-tab-label').should("have.length", 2);
+
+        cy.get('.mat-tab-label').first().click();
+
+        var test = cy.get('.mat-tab-body-active .mat-card-title');
+
+        cy.get('.mat-tab-body-active .mat-card-title').first()
+        .should('contain', "Angular Testing Course");
+    });
+
+    it('should be clickable the ABOUT button', () =>{
+
+        cy.get('.mat-toolbar-single-row .mat-button').last().click();
+        
+        cy.contains("Welcome!");
+    });
+
 
 });
 
