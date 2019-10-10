@@ -14,8 +14,8 @@ describe('About Page', () => {
 
     it('should be clickable the Courses button', () =>{
 
-        cy.get('.mat-toolbar-single-row .mat-button').last().click();
+        cy.get('[data-cy=courses-button]').last().click();
         
-        cy.contains("Welcome!");
+        cy.contains("All Courses");
     });
 });

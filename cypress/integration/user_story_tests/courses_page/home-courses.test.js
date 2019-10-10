@@ -49,7 +49,7 @@ describe('Home Page', () => {
 
     it('should be clickable the ABOUT button', () =>{
 
-        cy.get('.mat-toolbar-single-row .mat-button').last().click();
+        cy.get('[data-cy=about-button]').last().click();
         
         cy.contains("Welcome!");
     });
