@@ -2,13 +2,7 @@ describe('Home Page', () => {
 
     beforeEach(() => {
 
-        cy.fixture('courses.json').as("coursesJSON");
-
-        cy.server();
-
-        cy.route('/api/courses', "@coursesJSON").as("courses");
-
-        cy.visit('/');
+        cy.seedCoursesMainPage()
 
     });
 
