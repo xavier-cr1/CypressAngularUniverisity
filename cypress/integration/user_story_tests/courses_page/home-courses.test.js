@@ -35,8 +35,6 @@ describe('Home Page', () => {
 
         cy.get('.mat-tab-label').first().click();
 
-        var test = cy.get('.mat-tab-body-active .mat-card-title');
-
         cy.get('.mat-tab-body-active .mat-card-title').first()
         .should('contain', "Angular Testing Course");
     });
@@ -48,6 +46,11 @@ describe('Home Page', () => {
         cy.contains("Welcome!");
     });
 
+    it('should filter by lesson inside view course button', () => {
+    });
+
+    it('should edit a course content using edit button', () => {
+    });
 });
 
 
