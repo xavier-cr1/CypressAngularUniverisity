@@ -1,3 +1,5 @@
+/// <reference types="Cypress"/>
+
 describe('Home Page', () => {
 
     beforeEach(() => {
