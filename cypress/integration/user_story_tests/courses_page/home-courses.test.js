@@ -45,6 +45,8 @@ describe('Home Page', () => {
 
         cy.get('[data-cy=about-button]').last().click();
         
+        //cy.screenshot();
+
         cy.contains("Welcome!");
     });
 

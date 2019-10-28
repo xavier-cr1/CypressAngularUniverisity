@@ -51,6 +51,8 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^5.0.1",
+    "cypress-cucumber-preprocessor": "^1.16.2",
+    "cypress-dark": "^1.7.14",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "^4.1.0",
@@ -64,5 +66,8 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "3.4.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
