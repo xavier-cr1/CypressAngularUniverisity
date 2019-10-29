@@ -1,5 +1,6 @@
 {
   "baseUrl": "http://localhost:4200",
   "video": true,
-  "screenshotsFolder":"cypress/screenshots"
+  "screenshotsFolder":"cypress/screenshots",
+  "testFiles": "**/*.feature"
 }
